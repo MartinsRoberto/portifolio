@@ -212,7 +212,7 @@ p{
 }
 @media (max-width: 576.99px) {
   .container{
-    width: 540px;
+    width: 95%;
   }
   .header .btn-mobile{
     display: block;
@@ -324,4 +324,9 @@ p{
   right: 20px;
   background-color: var(--color-blue-1);
   color: var(--color-black-1);
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes identifier {
+  
 }
