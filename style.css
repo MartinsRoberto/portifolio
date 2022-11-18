@@ -84,19 +84,32 @@ p{
   display: none;
 }
 .header .btn-mobile {
-  border-top: 2px solid;
-  width: 20px;
+  position: relative;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: var(--color-black-1);
 }
-.header .btn-mobile::after,
-.header .btn-mobile::before {
+.header .bars{
   content: '';
   display: block;
-  width: 20px;
-  height: 2px;
-  background: green;
-  margin-top: 5px;
-  transition: 0.3s;
-  position: relative;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  background-color: var(--color-white-1);
+}
+.header .btn-mobile:hover .bars{
+  background-color: var(--color-blue-1);
+}
+.header .bars:nth-child(1){
+  top: 5px;
+}
+.header .bars:nth-child(2){
+  top: 15px;
+}
+.header .bars:nth-child(3){
+  top: 25px;
 }
 .home{
   background-color: var(--color-black-1);
@@ -220,7 +233,7 @@ p{
     background-color: var(--color-black-1);
   }
   .nav .nav-list.active {
-    height: 210px;
+    height: 160px;
     visibility: visible;
     overflow-y: hidden;
   } 
@@ -286,7 +299,7 @@ p{
     background-color: var(--color-black-1);
   }
   .nav .nav-list.active {
-    height: 210px;
+    height: 160px;
     visibility: visible;
     overflow-y: hidden;
   } 
