@@ -316,3 +316,12 @@ p{
   }
 }
 
+.meu-curriculo{
+  position: fixed;
+  border-radius: 5px;
+  padding: 10px;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-blue-1);
+  color: var(--color-black-1);
+}
