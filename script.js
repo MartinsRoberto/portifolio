@@ -8,8 +8,6 @@ navList.addEventListener('click', function(e){
   navList.classList.toggle('active')
 })
 
-
-
 function typeWriter(elemento) {
   const textoArray = elemento.innerHTML.split('');
   elemento.innerHTML = '';
@@ -18,6 +16,7 @@ function typeWriter(elemento) {
   });
 }
 
-
 const titulo = document.querySelector('.meu-nome');
 typeWriter(titulo);
+
+

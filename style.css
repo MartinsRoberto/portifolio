@@ -30,6 +30,8 @@ p{
   color: var(--color-gray-1);
 }
 .container{
+  width: 80%;
+  max-width: 1100px;
   margin: auto;
 }
 .btn-primary{
@@ -111,15 +113,17 @@ p{
 .header .bars:nth-child(3){
   top: 25px;
 }
+
 .home{
   background-color: var(--color-black-1);
+  box-sizing: border-box;
   margin-top: 80px;
-  height: calc(100vh - 80px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-height: calc(100vh - 80px);
   text-align: center;
+  padding: 30px 0px;
+  display: flex;
 }
+
 .home p{
   font-size: 24px;
   margin-bottom: 50px;
@@ -131,6 +135,15 @@ p{
   font-size: 34px;
   margin: 24px 0;
 }
+.home .links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.home .links a{
+  margin: 0px;
+}
 .home .oportunidade{
   max-width: 500px;
   margin: 50px auto;
@@ -141,43 +154,48 @@ p{
   color: var(--color-blue-1);
 }
 
-.sobre{
+.about{
   padding: 100px 0px;
   background-color: var(--color-black-2);
 }
-.sobre p{
+
+.about p{
   line-height: 2;
   text-align: justify;
 }
 
-.projetos{
+.projects{
   padding: 100px 0px;
   background-color: var(--color-black-1);
 }
-.projetos .card{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.projects .card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
-.projetos .card-img{
+.projects .card-item{
+  width: 280px;
+}
+.projects .card-img{
   max-width: 100%;
 }
-.projetos .card-title{
+.projects .card-title{
   border-bottom: 2px solid var(--color-black-1);
   color: var(--color-white-1);
   margin-bottom: 10px;
   display: inline-block;
   padding-bottom: 5px;
 }
-.projetos .card-title:hover{
+.projects .card-title:hover{
   border-bottom: 2px solid var(--color-blue-1);
   color: var(--color-blue-1);
 }
-.projetos .skill{
+.projects .skill{
   font-size: 13px;
   color: var(--color-blue-1);
 }
-.projetos .btn-primary{
+.projects .btn-primary{
   display: block;
 }
 .footer{
@@ -190,148 +208,40 @@ p{
   animation: changeColorName 10s infinite;
 }
 .footer p{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .footer a{
+  padding: 8px 0px;
+  border-bottom: 2px solid var(--color-black-2);
   color: var(--color-white-1);
 }
 .footer a:hover{
+  border-bottom: 2px solid var(--color-blue-1);
   color: var(--color-blue-1);
 }
-@media (max-width: 576.99px) {
-  .container{
-    width: 95%;
-  }
-  .header .btn-mobile{
-    display: block;
-  }
-  .header .nav-list{
-    text-align: center;
-    display: block;
-    position: absolute;
-    top: 75px;
-    left: 0px;
-    width: 100%;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
-    transition: .4s;
-    z-index: 1000;
-    background-color: var(--color-black-1);
-  }
-  .home .meu-nome{
-    font-size: 28px;
-  }
-  .home p{
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  .home a{
-    margin: auto;
-    margin-bottom: 10px;
-    max-width: 80px;
-    display: block;
-  }
-  .home .oportunidade{
-    margin: 10px 0px;
-    padding: 0px;
-  }
-  .nav .nav-list.active {
-    height: 160px;
-    visibility: visible;
-    overflow-y: hidden;
-  } 
-  .projetos .card{
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px){
-  .container{
-    width: 540px;
-  }
-  .header .btn-mobile{
-    display: block;
-  }
-  .header .nav-list{
-    text-align: center;
-    display: block;
-    position: absolute;
-    top: 75px;
-    left: 0px;
-    width: 100%;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
-    transition: .4s;
-    z-index: 1000;
-    background-color: var(--color-black-1);
-  }
-  .nav .nav-list.active {
-    height: 160px;
-    visibility: visible;
-    overflow-y: hidden;
-  } 
-  .projetos .card{
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.99px){
-  .container{
-    width: 720px;
-  } 
-  .header .btn-mobile{
-    display: block;
-  }
-  .header .nav-list{
-    text-align: center;
-    display: block;
-    position: absolute;
-    top: 75px;
-    left: 0px;
-    width: 100%;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
-    transition: .4s;
-    z-index: 1000;
-    background-color: var(--color-black-1);
-  }
-  .nav .nav-list.active {
-    height: 160px;
-    visibility: visible;
-    overflow-y: hidden;
-  } 
-  
-}
-@media (min-width: 992px) and (max-width: 1199.99px){
-  .container{
-    width: 920px;
-  }
-}
-@media (min-width: 1200px) {
-  .container{
-    width: 1140px;
-  }
-}
 
-.meu-curriculo{
-  position: fixed;
-  border-radius: 5px;
-  padding: 10px;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--color-blue-1);
-  color: var(--color-black-1);
-  animation: name duration timing-function delay iteration-count direction fill-mode;
-}
-
-@keyframes identifier {
-  
+@media (max-width: 992px) {
+  .header .btn-mobile{
+    display: block;
+  }
+  .header .nav-list{
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    transition: .4s;
+    z-index: 1000;
+    background-color: var(--color-black-1);
+  }
+  .header .nav .nav-list.active {
+    height: 160px;
+    visibility: visible;
+    overflow-y: hidden;
+  } 
 }
