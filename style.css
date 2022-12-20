@@ -169,16 +169,19 @@ p{
   background-color: var(--color-black-1);
 }
 .projects .card{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
 }
 .projects .card-item{
-  width: 280px;
+  width: 100%;
+  max-width: 420px;
 }
 .projects .card-img{
+  display: block;
   max-width: 100%;
+  background-position: center;
 }
 .projects .card-title{
   border-bottom: 2px solid var(--color-black-1);
@@ -244,4 +247,8 @@ p{
     visibility: visible;
     overflow-y: hidden;
   } 
+
+  .projects .card{
+    grid-template-columns: 1fr;
+  }
 }
