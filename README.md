@@ -1,11 +1,6 @@
 # Portifolio
 
-
 Este projeto é um portfólio online que apresenta meus projetos. O objetivo é criar exibir meus trabalhos para que outros possam ver.
-
-# Interface 
-
-![martinsroberto github io_portifolio_](https://user-images.githubusercontent.com/104272370/208791446-caa38e47-fc51-4233-b08e-a0652b71da01.png)
 
 # Descrição do projeto
 
@@ -13,6 +8,12 @@ Este portfólio foi construído com HTML, CSS e JavaScript. Ele inclui uma seç�
 A página de perfil e contato apresenta minha profissão e meio para entrar em contato comigo, além do currículo. 
 A seção sobre mim faz um breve resumo minha história na progração.
 A seção de projetos inclui imagens e tecnologias de cada projeto, há links que podem ser clicacados para ver cada projeto. 
+
+# Interface 
+
+![martinsroberto github io_portifolio_](https://user-images.githubusercontent.com/104272370/208791446-caa38e47-fc51-4233-b08e-a0652b71da01.png)
+
+
 
 # Tecnologias usadas
 
