@@ -26,3 +26,7 @@ A seção de projetos inclui imagens e tecnologias de cada projeto, há links qu
 
 Basta clicar no link para ir no site
 <a href="https://martinsroberto.github.io/portifolio/">Portifolio</link>
+
+# Autor
+
+Desenvolvido por mim
