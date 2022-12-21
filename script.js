@@ -20,3 +20,20 @@ const titulo = document.querySelector('.meu-nome');
 typeWriter(titulo);
 
 
+const btnVerMais = document.querySelector('.projects .btn-primary')
+
+
+let count = 4
+
+btnVerMais.addEventListener('click', () => {
+  let projects = document.querySelectorAll('.card-item')
+
+  projects[count].style.display = 'inline-block'
+
+  if(count < (projects.length - 1) ){
+    count++
+  }
+
+  projects[count].style.display = 'inline-block'
+
+})

@@ -50,6 +50,13 @@ p{
   color: var(--color-black-1);
   box-shadow: 0px 0px 10px 1px var(--color-blue-1);
 }
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
 .header{
   background-color: var(--color-black-1);
   width: 100%;
@@ -114,6 +121,12 @@ p{
   top: 25px;
 }
 
+/* HOME */
+/* HOME */
+/* HOME */
+/* HOME */
+/* HOME */
+
 .home{
   background-color: var(--color-black-1);
   box-sizing: border-box;
@@ -123,7 +136,6 @@ p{
   padding: 30px 0px;
   display: flex;
 }
-
 .home p{
   font-size: 24px;
   margin-bottom: 50px;
@@ -154,15 +166,26 @@ p{
   color: var(--color-blue-1);
 }
 
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+
 .about{
   padding: 100px 0px;
   background-color: var(--color-black-2);
 }
-
 .about p{
   line-height: 2;
   text-align: justify;
 }
+
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
 
 .projects{
   padding: 100px 0px;
@@ -177,6 +200,9 @@ p{
 .projects .card-item{
   width: 100%;
   max-width: 420px;
+}
+.projects .card-item:nth-child(n+5){
+  display: none;
 }
 .projects .card-img{
   display: block;
@@ -200,7 +226,18 @@ p{
 }
 .projects .btn-primary{
   display: block;
+  margin: auto;
+  margin-top: 60px;
+  background-color: var(--color-blue-1);
+  color: var(--color-black-1);
 }
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
 .footer{
   padding: 40px 0px;
   text-align: center;
